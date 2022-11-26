@@ -1,6 +1,5 @@
 # DisposableMail
-[![Build Status](https://travis-ci.org/oesgalha/disposable_mail.svg)](https://travis-ci.org/oesgalha/disposable_mail)
-[![Code Climate](https://codeclimate.com/github/oesgalha/disposable_mail/badges/gpa.svg)](https://codeclimate.com/github/oesgalha/disposable_mail)
+[![Ruby](https://github.com/CircuitVerse/disposable_email/actions/workflows/ruby.yml/badge.svg)](https://github.com/CircuitVerse/disposable_email/actions/workflows/ruby.yml)
 
 DisposableMail serves you a blacklist with domains from [disposable mail services](https://en.wikipedia.org/wiki/Disposable_email_address), like `mailinator.com` or `guerrillamail.com`. The list can be used to prevent sending mails to these domains (which probably won't be open), or to prevent dummy users registration in your website.
 
