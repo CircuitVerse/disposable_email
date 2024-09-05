@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'disposable_mail/version'
 
@@ -8,12 +7,12 @@ Gem::Specification.new do |spec|
   spec.version       = DisposableMail::VERSION
   spec.authors       = ['Oscar Esgalha']
   spec.email         = ['oscaresgalha@gmail.com']
-  spec.summary       = %q{A ruby gem with a list of disposable mail domains.}
-  spec.description   = <<DESC
-DisposableMail serves you a blacklist with domains from disposable mail services, like mailinator.com or guerrillamail.com.
- The list can be used to prevent sending mails to these domains (which probably won't be open),
- or to prevent dummy users registration in your website.
-DESC
+  spec.summary       = 'A ruby gem with a list of disposable mail domains.'
+  spec.description   = <<~DESC
+    DisposableMail serves you a blacklist with domains from disposable mail services, like mailinator.com or guerrillamail.com.
+     The list can be used to prevent sending mails to these domains (which probably won't be open),
+     or to prevent dummy users registration in your website.
+  DESC
   spec.homepage      = 'https://github.com/oesgalha/disposable_mail'
   spec.license       = 'MIT'
 
@@ -23,6 +22,6 @@ DESC
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2'
-  spec.add_development_dependency 'rake', '~> 10.1'
   spec.add_development_dependency 'minitest', '~> 5.6'
+  spec.add_development_dependency 'rake'
 end
